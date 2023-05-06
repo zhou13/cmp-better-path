@@ -1,16 +1,6 @@
-# cmp-path
+# cmp-better-path
 
-nvim-cmp source for filesystem paths.
-
-# Setup
-
-```lua
-require'cmp'.setup {
-  sources = {
-    { name = 'path' }
-  }
-}
-```
+A fork of cmp-path, nvim-cmp source for filesystem paths. It is just better!
 
 
 ## Configuration
@@ -18,10 +8,10 @@ require'cmp'.setup {
 The below source configuration options are available. To set any of these options, do:
 
 ```lua
-cmp.setup({
+require'cmp'.setup({
   sources = {
     {
-      name = 'path',
+      name = 'better-path',
       option = {
         -- Options go into this table
       },

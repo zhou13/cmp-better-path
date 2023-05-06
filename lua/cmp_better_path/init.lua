@@ -9,13 +9,13 @@ local constants = {
   max_lines = 20,
 }
 
----@class cmp_path.Option
+---@class cmp_better_path.Option
 ---@field public trailing_slash boolean
 ---@field public label_trailing_slash boolean
 ---@field public get_cwd fun(): string
 ---@field public show_hidden_files_by_default boolean
 
----@type cmp_path.Option
+---@type cmp_better_path.Option
 local defaults = {
   trailing_slash = false,
   label_trailing_slash = true,
@@ -193,7 +193,7 @@ source._is_slash_comment = function(_)
   return is_slash_comment and not no_filetype
 end
 
----@return cmp_path.Option
+---@return cmp_better_path.Option
 source._validate_option = function(_, params)
   local option = vim.tbl_deep_extend('keep', params.option, defaults)
   vim.validate({
