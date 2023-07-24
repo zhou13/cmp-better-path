@@ -37,7 +37,7 @@ Specify if directory names in the completion menu should include a trailing slas
 
 _Default:_ returns the current working directory of the current buffer
 
-Specifies the base directory for relative paths.
+Specifies the base directory for relative paths. If a _table_ is returned, all directories are looked up in order.
 
 ### show_hidden_files_by_default (type: boolean)
 
